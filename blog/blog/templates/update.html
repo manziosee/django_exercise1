@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block content%}
+
+    <h1>Update Trainee Form</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <br>
+        <button type="submit" class="btn btn-success btn-lg">Update</button>
+    </form>
+{%endblock content%}
+</html>
